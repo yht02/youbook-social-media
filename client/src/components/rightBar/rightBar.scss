@@ -1,0 +1,116 @@
+@import "../../style.scss";
+
+.rightBar {
+    @include themify($themes) {
+        flex: 3;
+        position: sticky;
+        top: 70px; // 50px height of navbar + top bottom padding (20px)
+        height: calc(100vh - 70px);
+        overflow: scroll;
+        background-color: themed("bgSoft");
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            padding: 20px;
+
+            .item {
+                -webkit-box-shadow: 1px 5px 16px 0px rgba(163, 146, 146, 1);
+                -moz-box-shadow: 1px 5px 16px 0px rgba(163, 146, 146, 1);
+                box-shadow: 1px 5px 16px 0px rgba(163, 146, 146, 1);
+                padding: 5px 10px;
+                font-size: 12px;
+                margin-bottom: 10px;
+                background-color: themed("bg");
+
+
+                span {
+                    color: gray;
+                    font-size: 14px;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 15px 0px;
+
+                    .userInfo {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        position: relative;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        p {
+                            color: themed("textColorSoft");
+                        }
+
+                        span {
+                            font-weight: 500;
+                            color: themed("textColorSoft");
+                        }
+
+                        .online {
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            background-color: limegreen;
+                            position: absolute;
+                            top: 0;
+                            left: 30px;
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            border: none;
+                            padding: 8px;
+                            color: white;
+                            cursor: pointer;
+                            border-radius: 5px;
+
+                            &:first-child {
+                                background-color: blue;
+                            }
+
+                            &:first-child:hover {
+                                background-color: rgba(0, 0, 255, 0.704);
+                            }
+
+                            &:last-child {
+                                background-color: crimson;
+                            }
+
+                            &:last-child:hover {
+                                background-color: rgba(220, 20, 60, 0.701);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}

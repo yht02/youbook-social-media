@@ -1,0 +1,112 @@
+.login {
+    height: 100vh;
+    background-color: hsl(261, 43%, 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        border-radius: 8px;
+        width: 50%;
+        min-height: 500px;
+        overflow: hidden;
+        .left {
+
+            flex: 1;
+            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+                        url("https://plus.unsplash.com/premium_photo-1674086973076-29705edcabda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOTB8fHxlbnwwfHx8fHw%3D")center;
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            color: white;
+            h1 {
+                font-size: 70px;
+                line-height: 70px;
+            }
+            p {
+                text-align: justify;
+            }
+            span{
+                font-size: smaller;
+            }
+            a {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                button {
+                    width: 50%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: blueviolet;
+                    font-weight: bold;
+    
+                }
+    
+                button:hover {
+                    background: hsl(272, 13%, 75%);
+                }
+            }
+            // button {
+            //     width: 50%;
+            //     padding: 10px;
+            //     border-radius: 5px;
+            //     cursor: pointer;
+            //     color: blueviolet;
+            //     font-weight: bold;
+
+            // }
+
+            // button:hover {
+            //     background: hsl(272, 13%, 75%);
+            // }
+        }
+
+        .right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background: rgba(255, 255, 255, 0.568);
+            justify-content: center;
+            
+            h1{
+                color:hsl(0, 15%, 27%);
+                text-align: center;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                input {
+                    border: 1px solid lightgrey;
+                    padding: 15px 10px;
+                    min-width: 80%;
+                }
+                input:focus {
+                    outline-color: lightcyan;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    background-color: rgba(174, 98, 196, 0.859);
+                    font-weight: bold;
+                }
+                button:hover {
+                    background: rgba(130, 70, 147, 0.915);
+                }
+            }
+        }
+    }
+}
