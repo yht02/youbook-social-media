@@ -1,4 +1,4 @@
-# Social Media App
+# YouBook Social Media App (created using ReactJS, Node.js, Express and MySQL)
 
 ## Overview
 
