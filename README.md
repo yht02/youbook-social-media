@@ -1,8 +1,9 @@
-# YouBook Social Media App (created using ReactJS, Node.js, Express and MySQL)
+# YouBook Social Media App 
 
 ## Overview
 
-This social media app is a platform that allows users to connect, share posts, comment, like, and manage their relationships with other users.
+This social media app is a platform that allows users to connect, share posts, comment, like, and manage their relationships with other users. <br>
+(created using ReactJS, Node.js, Express and MySQL)
 
 ## Features
 
